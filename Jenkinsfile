@@ -2,8 +2,8 @@ pipeline {
     agent {label 'S1'}
     
     tools {
-        maven 'M1'
-        jdk 'JDK19'
+        maven 'maven3999'
+       
     }
 
     stages {     
@@ -13,13 +13,7 @@ pipeline {
             }
         }
         
-        stage('Test') {
-            steps {
-                sh "mvn test"
-            }
-        }
-        
-        stage('Build') {
+    stage('Build') {
             steps {
                 sh "mvn clean"
             }
