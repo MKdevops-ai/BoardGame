@@ -1,6 +1,7 @@
 pipeline {
     agent {label 'S1'}
     
+    
     tools {
         maven 'M1'
         jdk 'JDK19'
