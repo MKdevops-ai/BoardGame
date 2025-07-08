@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'S1'}
+    agent any
     
     
     tools {
