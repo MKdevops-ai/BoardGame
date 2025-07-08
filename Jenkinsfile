@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'mn_label'
+    }
     
     
     tools {
